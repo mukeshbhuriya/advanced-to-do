@@ -1,0 +1,14 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 3rem;
+    color: var(--color-text-muted);
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    border: 2px dashed var(--color-border);
+}

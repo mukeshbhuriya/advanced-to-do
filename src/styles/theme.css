@@ -1,0 +1,56 @@
+:root {
+  /* HSL Color Variables for easy theming */
+  --primary-hue: 250; /* Deep Purple/Indigo */
+  --secondary-hue: 330; /* Pink/Rose */
+  --success-hue: 150; /* Green */
+  --warning-hue: 40; /* Orange */
+  --error-hue: 0; /* Red */
+  --neutral-hue: 220; /* Blue-ish Gray */
+
+  --color-primary: hsl(var(--primary-hue), 80%, 60%);
+  --color-primary-dark: hsl(var(--primary-hue), 80%, 50%);
+  --color-secondary: hsl(var(--secondary-hue), 80%, 60%);
+  
+  --color-bg-body: hsl(var(--neutral-hue), 30%, 98%);
+  --color-bg-card: hsl(0, 0%, 100%);
+  --color-text-main: hsl(var(--neutral-hue), 50%, 20%);
+  --color-text-muted: hsl(var(--neutral-hue), 30%, 50%);
+  --color-border: hsl(var(--neutral-hue), 30%, 90%);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  --transition-fast: 0.2s ease;
+}
+
+[data-theme="dark"] {
+  --color-bg-body: hsl(var(--neutral-hue), 30%, 10%);
+  --color-bg-card: hsl(var(--neutral-hue), 30%, 15%);
+  --color-text-main: hsl(var(--neutral-hue), 30%, 90%);
+  --color-text-muted: hsl(var(--neutral-hue), 30%, 70%);
+  --color-border: hsl(var(--neutral-hue), 30%, 25%);
+  
+  --color-primary: hsl(var(--primary-hue), 70%, 65%);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-bg-body);
+  color: var(--color-text-main);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reset buttons and inputs */
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
