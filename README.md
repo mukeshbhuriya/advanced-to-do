@@ -1,3 +1,15 @@
+Features Implemented
+    1. Task Management: Add, Edit, Delete, Toggle Completion.
+    2. Persistent Storage: Tasks are saved to localStorage and persist across reloads.
+    3. Validation: prevents empty titles and handles errors.
+    4. Filtering & Sorting: Filter by status (All/Completed/Pending), Sort by Date or Alphabetical.
+    5. Dark Mode: Full dark mode support using CSS variables.
+    6. Responsive Design: Mobile-friendly layout.
+    7. Architecture:
+        src/hooks: Custom hooks for logic separation (useTodos, useLocalStorage).
+        src/components: Modular components with CSS Modules.
+        src/utils: Helper functions for purity.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
